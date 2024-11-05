@@ -1,0 +1,92 @@
+.classes-container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.799);
+    background-image: url("../images/class section/bg 1.jpg");
+    background-blend-mode: darken;
+    padding: 5rem 0;
+}
+.classes-heading {
+    font-weight: normal;
+    font-size: 32px;
+    border-bottom: 2px solid white;
+    width: 200px;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+.classes-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding: 0 3rem;
+}
+.classes-content figure {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 1rem;
+    justify-self: center;
+    text-align: center;
+}
+.classes-content img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-size: contain;
+}
+.classes-content button {
+    border: none;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #C53B3B;
+    color: white;
+}
+.trainer-container {
+    padding: 5rem 0;
+    background-image: url("../images/class section/gym3.jpg");
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.608);
+    background-blend-mode: color;
+    border-bottom: 2px solid black;
+    
+  
+}
+.trainer-container .classes-content img {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.trainer-container .classes-content button {
+    background-color: rgb(87, 87, 87);
+}
+.trainer-heading {
+    font-weight: normal;
+    font-size: 32px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    width: 350px;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+.secondary-section {
+    height: 600px;
+}
+.toggle-carousel {
+    position: relative;
+    top: -300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.toggle-carousel i {
+    font-size: 48px;
+    background-color: rgba(255, 255, 255, 0.285);
+    width: 48px;
+    text-align: center;
+}
+@media(max-width: 900px) {
+    .classes-content{
+        grid-template-columns: 1fr;
+    }
+}

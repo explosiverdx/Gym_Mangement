@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Star Gym</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/blogs.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="../script.js" defer></script>
+    <!--Font awesome import-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="../images/fitness logo.png" alt="logo">
+        <nav>
+            <i class="fa-solid fa-bars nav-toggle"></i>
+            <ul class="nav" aria-disabled="true">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/classes.html">Classes</a></li>
+                <li><a href="../pages/products.html">Products</a></li>
+                <li><a href="#">Blogs</a></li>
+                <button onclick="displayForm()" class="btn-form">Join Us</button>
+            </ul>
+        </nav>
+    </header>
+    <form action="" id="main-form" class="form" aria-disabled="true">
+        <div>
+            <p>Registration</p>
+            <i class="fa-solid fa-close" onclick="closeForm()"></i>
+        </div>
+        <label for="firstName">FirstName</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">LastName</label>
+        <input type="text" id="lastName" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <main>
+        <section>
+            <aside class="article-container">
+                <p class="article-date">7/12/2023</p>
+                <h3 class="article-heading">Various Benifits of Yoga</h3>
+                <figure class="article-author">
+                    <img class="author" src="../images/blogger-logo-6942640_1280.png" alt="author">
+                    <figcaption class="author-name">Rohit kumar</figcaption>
+                </figure>
+                <div class="article-content">
+                    <img src="../images/dylan-gillis-YJdCZba0TYE-unsplash.jpg" alt="yoga">
+                    <p>
+                        Because there are so many different kinds of yoga practices, it is possible for anyone to start. 
+                        “Whether you’re a couch potato or a professional athlete, size and fitness levels do not matter 
+                        because there are modifications for every yoga pose and beginner classes in every style,” says 
+                        Dr. Nevins. “The idea is to explore your limits, not strive for some pretzel-like perfection. 
+                        It is a great way to get in tune with your body and your inner self.”​
+                    </p>
+                    <p>
+                        “The relaxation techniques incorporated in yoga can lessen chronic pain, such as lower back pain, 
+                        arthritis, headaches and carpal tunnel syndrome,” explains Dr. Nevins. “Yoga can also lower blood 
+                        pressure and reduce insomnia.”
+                    </p>
+                    <p>
+                        Aside from the physical benefits, one of the best benefits of yoga is how it helps a person manage stress, 
+                        which is known to have devastating effects on the body and mind. “Stress can reveal itself in many ways, 
+                        including back or neck pain, sleeping problems, headaches, drug abuse, and an inability to concentrate,” 
+                        says Dr. Nevins. “Yoga can be very effective in developing coping skills and reaching a more positive outlook 
+                        on life.”
+                    </p>
+                    <p>
+                        Yoga’s incorporation of meditation and breathing can help improve a person’s mental well-being. 
+                        “Regular yoga practice creates mental clarity and calmness; increases body awareness; relieves chronic 
+                        stress patterns; relaxes the mind; centers attention; and sharpens concentration,” says Dr. Nevins. 
+                        Body- and self-awareness are particularly beneficial, she adds, “because they can help with early 
+                        detection of physical problems and allow for early preventive action.”
+                    </p>
+                </div>
+            </aside>
+            <aside class="other-articles">
+                <p>Related Articles</p>
+                <figure>
+                    <img src="../images/hayley-kim-studios-eot-ka5dM7Q-unsplash.jpg" alt="article">
+                    <figcaption>Best Ab workouts</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg" alt="article">
+                    <figcaption>How to DeadLift properly</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/total-shape-wXBK9JrM0iU-unsplash.jpg" alt="article">
+                    <figcaption>Inner Chest Workout</figcaption>
+                </figure>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="logo-container">
+                <img class="logo" src="../images/fitness logo.png" alt="logo">
+                <p class="logo-desc">
+                    Prioritize Your Fitness Goals with our world class services
+                </p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li class="main-bg">Company</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Blogs</li>
+                </ul>
+                <ul>
+                    <li class="main-bg">Contact</li>
+                    <li>Help FAQs</li>
+                    <li>Press</li>
+                    <li>Mobile</li>
+                </ul>
+                <ul>
+                    <li class="main-bg">More</li>
+                    <li>Program</li>
+                    <li>Plans</li>
+                    <li>Method</li>
+                </ul>
+            </div>
+            <div class="tags-container">
+                <p>Popular Tags</p>
+                <button class="bg-gray">ABS</button>
+                <button class="bg-darkyellow">Workout</button>
+                <button class="bg-gray">Nutrition</button>
+                <button class="bg-darkyellow">MMA</button>
+                <button class="bg-gray">Boxing</button>
+                <button class="bg-darkyellow">Trainers</button>
+                <button class="bg-darkyellow">Facilities</button>
+            </div>
+        </div>
+        <p class="copyright">CopyRight All Rights Reserved</p>
+    </footer>
+</body>
+</html>

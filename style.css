@@ -1,0 +1,496 @@
+
+:root {
+    --main-bg: rgba(255, 165, 0, 1);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+    scroll-behavior: smooth;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(82, 77, 77, 1);
+
+}
+.logo {
+    width: 100px;
+}
+.form {
+    display: none;
+    z-index: 999999;
+}
+.form[aria-disabled = "false"] {
+
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    display: flex;
+
+    /* position:fixed; */
+    /* top: 50; */
+ 
+    /* flex-direction: column; */
+    /* width: 600px; */
+    /* background-color: #cfcfcf; */
+    /* background-blend-mode: color; */
+    /* transform: translateX(-50%); */
+    /* margin-inline: 50%; */
+    /* padding: 1rem; */
+    /* gap: 1rem; */
+}
+.form input , .form select, .form button {
+    height: 30px;
+}
+.form button {
+    border: none;
+    background-color: rgb(94, 91, 91);
+    color: white;
+}
+.form div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.form p {
+    grid-column: 2/3;
+    text-align: center;
+}
+.form i {
+    text-align: end;
+    margin-right: 1rem;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+
+}
+
+.nav-toggle {
+    display: none !important;
+}
+.nav a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.nav a:hover {
+    border-bottom: 2px solid var(--main-bg);
+}
+.btn-form {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.btn-form:hover{
+    border: 2px solid rgb(226, 216, 75);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.main-section {
+    background-color: rgba(25, 25, 28, 0.671);
+    background-image: url("images/scott-webb-Vn39uEkX00s-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+    color: white;
+    padding: 5rem 0;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem;
+    gap: 1rem;
+    width: 500px;
+}
+.main-container h1 {
+    font-size: 48px;
+}
+.main-container button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+.btn-1 {
+    background-color: var(--main-bg);
+    border: none;
+    font-weight: bold;
+}
+.btn-1:hover{
+    border: 2px solid white;
+    background-color: transparent;
+
+}
+.btn-2 {
+    background-color: transparent;
+    border: 1px solid var(--main-bg);
+    color: white;
+}
+
+.btn-2:hover{
+    border: 2px solid white;
+
+
+}
+.socials-container {
+    position: relative;
+    top: -20px;
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    border-bottom-right-radius: 100px;
+}
+.socials-container i {
+    font-size: 20px;
+}
+.secondary-section {
+    background-color:#FFA50057;
+}
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+    justify-content: center;
+}
+.categories-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.border-right {
+    border-right: 2px solid var(--main-bg);
+}
+.border-bottom {
+    border-bottom: 2px solid var(--main-bg);
+}
+.categories-container img {
+    width: 100px;
+}
+.categories-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.subscription-container {
+    background-image: url("images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 8rem 0;
+}
+
+.subscription-container-heading {
+    font-size: 32px;
+    color: var(--main-bg);
+    text-align: center;
+}
+.plan-containers {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+
+.plan-containers div {
+    margin: auto;
+    background-color: #ffffff19;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem 0;
+    width: 250px;
+}
+
+.plan-containers div:hover{
+    transition: 0.7s ease;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    /* width: 310px;
+    height: 340px; */
+    background-color: rgb(50, 97, 91);
+    /* font-size: 19px; */
+    cursor: pointer;
+}
+.plan-container-heading {
+    color: var(--main-bg);
+}
+.plan-containers button {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--main-bg);
+    color: white;
+}
+.plan-containers button:hover{
+    border: 2px solid white;
+    background-color: transparent;
+    color: rgb(35, 252, 35);
+    cursor: pointer;
+}
+.reasons-container {
+    background-image: url("images/couple-training-together-gym.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--main-bg);
+    text-align: center;
+}
+.reasons-container div {
+    padding: 5rem 0;
+    backdrop-filter: blur(7px);
+}
+.reasons-container-heading {
+    font-size: 32px;
+    color: black;
+    font-weight: bolder;
+}
+
+.reasons-list {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reasons-list li {
+    border: 1px solid white;
+}
+.reasons-list li figure {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 300px;
+    align-items: center;
+    /* color: red; */
+    background-color: black;
+}
+.reasons-list img {
+    width: 100px;
+    filter: invert(85%);
+}
+
+
+/* .club{
+    background-color: #f7d597;
+    color: black;
+    text-align: center;
+    padding: 15px 30px 25px;
+  
+  }
+  .compo{
+    background-color: #ebe8e3;
+    text-align: center;
+  
+  }
+  .compo ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 25px 35px;
+  } */
+  
+
+.success-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url("images/heidi-erickson-CPSjcuuV8E8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: darken;
+    padding: 5rem 0;
+    color: var(--main-bg);
+}
+.success-stories {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.success-stories figure {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 1rem;
+    justify-self: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: #f7f7f700;
+    padding-bottom: 1rem;
+}
+.success-stories figcaption {
+    font-size: 14px;
+    padding-inline: 1rem;
+}
+.success-stories figure img {
+    /* width: 200px;
+    height: 200px; */
+    width: 100%;
+}
+.main-footer {
+    background-color: rgba(7, 7, 7, 0.93);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 3rem;
+    gap: 1rem;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+.logo-desc {
+    color: var(--main-bg);
+}
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-nav ul {
+    list-style: none;
+}
+.main-bg {
+    color: var(--main-bg);
+    margin-bottom: 1rem;
+}
+.tags-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 300px;
+    margin-inline: auto;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+}
+.tags-container :nth-child(1) {
+    grid-column: 1/4;
+}
+.tags-container :nth-child(2) , .tags-container :nth-child(4), .tags-container :nth-child(6) {
+    grid-column: 1/3;
+}
+.tags-container :last-child {
+    grid-column: 2/3;
+}
+.bg-gray {
+    background-color: rgba(141, 131, 131, 1);
+    /* border: 1px solid var(--main-bg); */
+    color: white;
+    height: 30px;
+    
+}
+.bg-darkyellow {
+    border: none;
+    background-color: var(--main-bg);
+    height: 30px;
+    /* font-weight: bold; */
+    color: white;
+}
+.copyright {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--main-bg);
+}
+@media(max-width: 800px) {
+    .nav-toggle {
+        display: block !important;
+        font-size: 20px;
+        z-index: 10000;
+        position: relative;
+    }
+    .nav[aria-disabled = "true"] {
+        display: none;
+    }
+    .nav  {
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0px;
+        padding: 5rem 5rem;
+        bottom: 0;
+        background-color: gray;
+        z-index: 1000;
+    }
+    .main-container {
+        padding-inline: 1rem;
+        align-items: center;
+        width:100%;
+    }
+    .main-container h1 {
+        font-size: large;
+    }
+    .main-container p {
+        font-size: 14px;
+        width: 200px;
+    }
+    .categories-heading {
+        font-size: large;
+    }
+    .plan-containers {
+        grid-template-columns: 1fr;
+    }
+    .success-stories {
+        grid-template-columns: 1fr;
+    }
+    .main-footer {
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+        row-gap: 2rem;
+        column-gap: 1rem;
+    }
+    .main-footer :nth-child(3) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .tags-container {
+        width: 100%;
+    }
+    .tags-container :nth-child(3) {
+        grid-row: auto;
+        grid-column: auto;
+    }
+    .footer-nav {
+        grid-column: 1/4;
+        justify-content: center;
+        margin-inline: auto;
+        gap: 1rem;
+    }
+    .form[aria-disabled = "false"] {
+        width: 90%;
+    }
+    .form{
+        background-color: var(--main-bg);
+    }
+}

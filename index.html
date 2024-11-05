@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Star Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="script.js" defer></script>
+    <!--Font awesome import-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/fitness logo.png" alt="logo">
+        <nav>
+            <i class="fa-solid fa-bars nav-toggle"></i>
+            <ul class="nav" aria-disabled="true">
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/classes.html">Classes</a></li>
+                <li><a href="./pages/products.html">Products</a></li>
+                <li><a href="./pages/blogs.html">Blogs</a></li>
+                <button onclick="displayForm()" class="btn-form">Join Us</button>
+            </ul>
+        </nav>
+    </header>
+    <form action="" id="main-form" class="form" aria-disabled="true">
+        <div>
+            <p>Registration</p>
+            <i class="fa-solid fa-close" onclick="closeForm()"></i>
+        </div>
+        <label for="firstName">FirstName</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">LastName</label>
+        <input type="text" id="lastName" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <main>
+        <section class="main-section">
+            <aside class="main-container">
+                <h1>Revitalize your body</h1>
+                <p>Fall in love with taking care of yourself: mind, body, and spirit.</p>
+                <div>
+                    <button class="btn-1">Get Started</button>
+                    <button class="btn-2">Free Trail <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </aside>
+        </section>
+        <section class="secondary-section">
+            <aside class="socials-container">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </aside>
+            <aside>
+                <p class="categories-heading">FITNESS PLANS AND NUTRITIONS</p>
+                <div class="categories-container">
+                    <div class="border-bottom border-right">
+                        <img src="images/icons8-weight-pound-50.png" alt="categories">
+                        <p>Weight Loss</p>
+                    </div>
+                    <div class="border-bottom border-right">
+                        <img src="images/icons8-yoga-50.png" alt="categories">
+                        <p>Classic Yoga</p>
+                    </div>
+                    <div class="border-bottom">
+                        <img src="images/icons8-cycling-50.png" alt="categories">
+                        <p>Cycling</p>
+                    </div>
+                    <div class="border-right">
+                        <img src="images/icons8-biceps-50.png" alt="categories">
+                        <p>Bodybuilding</p>
+                    </div>
+                    <div class="border-right">
+                        <img src="images/icons8-barbell-50.png" alt="categories">
+                        <p>Hypertrophy</p>
+                    </div>
+                    <div>
+                        <img src="images/icons8-running-50.png" alt="categories">
+                        <p>Running</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <section>
+            <aside class="subscription-container">
+                <p class="subscription-container-heading">SUBSCRIPTION PLANS</p>
+                <div class="plan-containers">
+                    <div>
+                        <p class="plan-container-heading">Basic</p>
+                        <p>for 12 months</p>
+                        <p class="plan-container-heading">800/month</p>
+                        <p>for streaming</p>
+                        <button onclick="displayPlanForm()">Select Plan</button>
+                    </div>
+                    <div>
+                        <p class="plan-container-heading">Intermediate</p>
+                        <p>for 12 months</p>
+                        <p class="plan-container-heading">1000/month</p>
+                        <p>for streaming</p>
+                        <button onclick="displayPlanForm()">Select Plan</button>
+                    </div>
+                    <div>
+                        <p class="plan-container-heading">Advanced</p>
+                        <p>for 12 months</p>
+                        <p class="plan-container-heading">1500/month</p>
+                        <p>for streaming</p>
+                        <button onclick="displayPlanForm()">Select Plan</button>
+                    </div>
+                </div>
+                <form action="" id="plan-form" class="form" aria-disabled="true">
+                    <div>
+                        <p>Select Plan</p>
+                        <i class="fa-solid fa-close" onclick="closePlanForm()"></i>
+                    </div>
+                    <label for="firstName">FirstName</label>
+                    <input type="text" id="firstName" required>
+                    <label for="lastName">LastName</label>
+                    <input type="text" id="lastName" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <label for="plan">Plans</label>
+                    <select name="plan" id="plan">
+                        <option value="basic">Basic</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="intermediate">Advanced</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </aside>
+            <aside class="reasons-container">
+                <div>
+                    <p class="reasons-container-heading">Why Join us??</p>
+                    <ul class="reasons-list">
+                        <li>
+                            <figure>
+                                <img src="images/gm.png" alt="good-management" style="color: blueviolet;">
+                                <figcaption>Good management</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/ps1.jpg" alt="practice-sessions">
+                                <figcaption>Practice Sessions</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/ft2.png" alt="personal-trainer">
+                                <figcaption>Personal Trainers</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div> 
+
+            </aside>
+            <aside class="success-container">
+                <p class="subscription-container-heading">SUCCESS STORIES</p>
+                <div class="success-stories">
+                    <figure>
+                        <img src="images/james-barr-jYrFcbztIHA-unsplash.jpg" alt="success-stories">
+                        <figcaption>
+                            Working out regularly I lose some of my extra pounds which helped in my modelling career.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hayley-kim-studios-eot-ka5dM7Q-unsplash.jpg" alt="success-stories">
+                        <figcaption>
+                            Yoga and Pilates helped me get back in shape and raised my confidence.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mark-adriane-xQghSLXYD3M-unsplash.jpg" alt="success-stories">
+                        <figcaption>
+                            Personal Trainer diet plan helpedin increasing strength and endurance.
+                        </figcaption>
+                    </figure>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="main-footer">
+            <div class="logo-container">
+                <img class="logo" src="images/fitness logo.png" alt="logo">
+                <p class="logo-desc">
+                    Prioritize Your Fitness Goals with our world class services
+                </p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li class="main-bg">Company</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Blogs</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                <ul>
+                    <li class="main-bg">Contact</li>
+                    <li>Help FAQs</li>
+                    <li>Press</li>
+                    <li>Mobile</li>
+                </ul>
+                <ul>
+                    <li class="main-bg">More</li>
+                    <li>Program</li>
+                    <li>Plans</li>
+                    <li>Method</li>
+                </ul>
+            </div>
+            <div class="tags-container">
+                <p>Popular Tags</p>
+                <button class="bg-gray">ABS</button>
+                <button class="bg-darkyellow" style="background-color:rgba(141, 131, 131, 1);
+                ;">Workout</button>
+                <button class="bg-gray" style="background-color: var(--main-bg);">Nutrition</button>
+                <button class="bg-darkyellow" style="background-color:rgba(141, 131, 131, 1);
+                ;">ABS</button>
+                <button class="bg-gray">Boxing</button>
+                <button class="bg-darkyellow">Trainers</button>
+                <button class="bg-darkyellow">Facilities</button>
+            </div>
+        </div>
+        <p class="copyright">CopyRight All Rights Reserved</p>
+    </footer>
+</body>
+</html>
